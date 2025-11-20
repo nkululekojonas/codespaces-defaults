@@ -30,11 +30,11 @@ The core logic is contained within the `install.sh` script:
 2. **Configures Shell:** It safely appends the necessary `source` commands to the Codespace's shell configuration files (`.zshrc` and `.bashrc`).
 3. **Persistence:** This ensures that all your custom functions and aliases are loaded **automatically** every time you open a new terminal session in any Codespace.
 
-### 📁 Repository Structure### 🔗 Linked Repository
+### 🔗 Linked Repository
 
 This repository relies on the shell configuration files hosted here:
 
-* [**nkululekojonas/dotfiles**](https://github.com/nkululekojonas/dotfiles) - (Your main dotfiles repository)
+* [**nkululekojonas/dotfiles**](https://github.com/nkululekojonas/dotfiles) 
 
 ---
 
