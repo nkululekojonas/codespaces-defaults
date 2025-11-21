@@ -8,7 +8,7 @@ curl -fsSL "$DOTFILES_URL/shell/functions.sh" -o "$HOME/.functionsrc"
 curl -fsSL "$DOTFILES_URL/shell/aliases.sh" -o "$HOME/.aliasrc"
 
 # Use .bash_aliases - automatically sourced by default .bashrc
-cat > "$HOME/.bash_aliases" << 'EOF'
+cat >> "$HOME/.bashrc" << 'EOF'
 [ -f "$HOME/.functionsrc" ] && source "$HOME/.functionsrc"
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 EOF
