@@ -9,8 +9,11 @@ curl -fsSL "$DOTFILES_URL/shell/aliases.sh" -o "$HOME/.aliasrc"
 
 # Use .bash_aliases - automatically sourced by default .bashrc
 cat > "$HOME/.bash_profile" << 'EOF'
+# Load Personal Config Files
 [ -f "$HOME/.functionsrc" ] && source "$HOME/.functionsrc"
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
+
+echo "[INFO]: Personal Shell Config Loaded"
 EOF
 
 echo "Setup complete! Files will load on next shell."
