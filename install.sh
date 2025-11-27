@@ -41,7 +41,7 @@ create_symlink "${DOTFILES}/shell/.aliases" "${XDG_CONFIG_HOME}/shell/.aliases"
 create_symlink "${DOTFILES}/shell/.functions" "${XDG_CONFIG_HOME}/shell/.functions"
 
 # --- 4. Create Bootstrap .bashrc in Home Directory ---
-BASHRC_STUB="${HOME}/.bash_profile"
+BASHRC_STUB="${HOME}/.profile"
 XDG_BASHRC="${XDG_CONFIG_HOME}/bash/.bashrc"
 
 # Create a small stub in the traditional location (~/.bashrc)
