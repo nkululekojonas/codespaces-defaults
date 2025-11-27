@@ -58,9 +58,8 @@ cat > "$BASHRC_STUB" <<- 'EOF'
 #
 
 # Check for and source the main XDG bash configuration
-if [ -f "${HOME}/.config/bash/.bashrc" ]; then
-    # Source the XDG-compliant .bashrc
-    . "${HOME}/.config/bash/.bashrc"
+if [ -f "${HOME}/.config/bash/.bash_profile" ]; then
+    . "${HOME}/.config/bash/.bash_profile"
 fi
 EOF
 
