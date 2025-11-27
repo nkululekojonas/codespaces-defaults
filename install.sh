@@ -34,9 +34,11 @@ create_symlink() {
 }
 
 # Symlink Bash configuration (main .bashrc)
+create_symlink "${DOTFILES}/bash/.bash_profile" "${XDG_CONFIG_HOME}/bash/.bash_profile"
 create_symlink "${DOTFILES}/bash/.bashrc" "${XDG_CONFIG_HOME}/bash/.bashrc"
 
 # Symlink aliases and functions (using XDG structure)
+create_symlink "${DOTFILES}/shell/.env" "${XDG_CONFIG_HOME}/shell/.env"
 create_symlink "${DOTFILES}/shell/.aliases" "${XDG_CONFIG_HOME}/shell/.aliases"
 create_symlink "${DOTFILES}/shell/.functions" "${XDG_CONFIG_HOME}/shell/.functions"
 
